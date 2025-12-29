@@ -1,13 +1,15 @@
 # VIM4 & 128x32 Oled Display
 **NOTE:** follow [OEM Link](https://docs.khadas.com/products/sbc/vim4/applications/gpio/i2c#tab__vim4) to enable i2c.  
 **NOTE:** `i2c` address is muxed and might be other than specified, perform `i2cdetect -l` and then `i2cdetect -y 4` so see if there are `i2c` address available for your OLED Display.  
-**NOTE:** some `i2c` OLED displays have their SCL/SDA misslabled, if you are not getting address from OLED while its connected try swapping following:  
+**NOTE:** some `i2c` OLED displays have their SCL/SDA mislabeled, if you are not getting address from OLED while its connected try swapping following:  
 display: `SCL -> SDA` VIM4  
 display: `SDA -> SCL` VIM4  
 
 This is aimed to be also easy to modify for 128x64 oled display 
 
 if you planning to install manually execute the following:
+
+**TODO:** have requirements list
 
 ```bash
 git clone https://github.com/username/repository-name

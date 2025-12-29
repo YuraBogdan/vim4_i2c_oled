@@ -7,9 +7,11 @@ display: `SDA -> SCL` VIM4
 
 This is aimed to be also easy to modify for 128x64 oled display 
 
-if you planning to install manually execute the following:
-**NOTE:** You will have to install requirements
-**TODO:** have requirements list
+**NOTE:** You will have to install requirements  
+**TODO:** have requirements list  
+
+if you planning to install manually execute the following:  
+
 
 ```bash
 git clone https://github.com/username/repository-name

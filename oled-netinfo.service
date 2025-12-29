@@ -1,0 +1,15 @@
+[Unit]
+Description=OLED Network Info Display
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/oled_netinfo.py /etc/oled-netinfo.yaml
+Restart=always
+RestartSec=3
+User=root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

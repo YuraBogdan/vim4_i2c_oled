@@ -1,0 +1,31 @@
+i2c:
+  port: 4
+  address: 0x3C
+  width: 128
+  height: 32
+
+fonts:
+  title:
+    path: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+    size: 9
+  body:
+    path: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+    size: 12
+
+update_interval: 0.2
+
+page_rotation:
+  interval: 5
+
+network:
+  exclude_prefixes:
+    - lo
+    - docker
+    - br
+    - veth
+    - virbr
+
+pages:
+  - name: net
+  - name: speed
+  - name: mac
